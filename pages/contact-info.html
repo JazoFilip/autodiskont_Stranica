@@ -19,26 +19,30 @@
     </head>
     <body>
 
-        <header>
+<header class="header">
+    <nav class="nav">
 
-            <nav class="nav">
-                <div class="logo">
-                    <a href="../index.html"><img src="../img/logo2.png" alt="Autodiskont logo"></a>
-                </div>
-                <button class="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+        <a href="index.html" class="logo">
+            <img src="../img/logo2.png" alt="Autodiskont logo">
+        </a>
 
-                <ul class="nav-links">
-                    <li><a href="../index.html">Početna</a></li>
-                    <li><a href="services.html">Usluge</a></li>
-                    <li><a href="contact-info.html" class="active-link">Kontakt</a></li>
-                </ul>
-            </nav>
+        <button class="hamburger" 
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-        </header>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="../index.html">Početna</a></li>
+            <li><a href="services.html">Usluge</a></li>
+            <li><a href="contact-info.html" class="active-link">Kontakt</a></li>
+        </ul>
+
+    </nav>
+</header>
 
         <section class="contact-section">
             <div class="contact-container">
@@ -53,13 +57,13 @@
                         </a>
                     </p>
 
-                     <p>
+                    <p>
                         <i class="fa-solid fa-phone"></i>
                         <a href="tel:+385997361535">
                             +385 99 736 1535
                         </a>
                     </p>
-                     <p>
+                    <p>
                         <i class="fa-solid fa-phone"></i>
                         <a href="tel:+385959037107">
                             +385 95 903 7107
@@ -83,16 +87,25 @@
                     </ul>
                 </div>
 
-                <form class="contact-form">
-                    <input type="text" placeholder="Ime i prezime" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Poruka" required></textarea>
+                <form class="contact-form"
+                    action="https://formsubmit.co/d92ff0b0983ff0797b12d974a3c9514b "
+                    method="POST">
+
+                    <input type="text" name="name" placeholder="Ime i prezime" required minlength="3">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Poruka" required minlength="5"></textarea>
+
+                    <input type="text" name="_honey" style="display:none">
+
+                    <!-- Settings -->
+                    <input type="hidden" name="_subject" value="Nova poruka s web stranice">
+                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+                    <!-- <input type="hidden" name="_next" value="https://your-site.netlify.app/hvala.html"> -->
+
                     <button type="submit">Pošalji upit</button>
                 </form>
 
             </div>
-
-
         </section>
 
         <section class="map-section">

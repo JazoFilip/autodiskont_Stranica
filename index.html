@@ -2,13 +2,25 @@
 
 <html>
     <head>
-        <title>Autodiskont</title>
+        <title>Autodiskont Nova Gradiška | Autoservis i Autodijelovi</title>
 
 
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         
+       <meta name="description" content="Auto Diskont - autoservis u Novoj Gradiški. Servis vozila, automehaničar, dijagnostika, vulkanizer i zamjena auto dijelova. Nazovite nas danas.">
+        <meta name="keywords" content="autoservis Nova Gradiška, auto dijelovi, mehaničar, servis automobila, Auto Diskont">
+
+        <meta name="author" content="Autodiskont">
+        <meta property="og:title" content="Auto Diskont Nova Gradiška">
+        <meta property="og:description" content="Profesionalni autoservis i autodijelovi u Novoj Gradiški.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://your-site.netlify.app">
+        <meta property="og:image" content="https://your-site.netlify.app/img/car1.png">
+
+        <link rel="icon" type="image/png" href="img/favicon.png">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -22,29 +34,30 @@
     </head>
     <body>
 
-        <header>
+<header class="header">
+    <nav class="nav">
 
-            <nav class="nav">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo2.png" alt="Autodiskont logo"></a>
-                </div>
+        <a href="index.html" class="logo">
+            <img src="img/logo2.png" alt="Autodiskont logo">
+        </a>
 
-                <button class="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+        <button class="hamburger" 
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active-link scroll-top">Početna</a></li>
-                    <li><a href="pages/services.html">Usluge</a></li>
-                    <li><a href="pages/contact-info.html">Kontakt</a></li>
-                </ul>
-            </nav>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html" class="active-link">Početna</a></li>
+            <li><a href="pages/services.html">Usluge</a></li>
+            <li><a href="pages/contact-info.html">Kontakt</a></li>
+        </ul>
 
-        </header>
-
-        <div class="nav-spacer"></div>
+    </nav>
+</header>
 
         <section class="hero">
 
@@ -55,56 +68,96 @@
                 <p>
                     Pouzdana usluga servisa, izmjene guma i dijagnostike vozila.
                 </p>
-            </div>
+                <div class="hero-buttons">
+                    <a href="tel:+385997361535" class="btn">
+                       <i class="fa-solid fa-phone"></i>099 736 1535
+                    </a>
 
-        </section>
-
-        <section class="about">
-
-            <div class="about-content">
-                    <h2>O nama</h2>
-
-                    <div class="about-line"></div>
-
-                    <p>
-                        Poslujemo više od 20 godina te svojim klijentima 
-                        pružamo pouzdane i kvalitetne usluge održavanja vozila. 
-                        Naša djelatnost obuhvaća redovne servise, popravke i 
-                        dijagnostiku vozila, kao i prodaju novih autodijelova renomiranih proizvođača.
-                        Osim rada u radionici, nudimo i izlazak na teren za manje intervencije, 
-                        poput probušene gume ili problema s pokretanjem vozila.
-                    </p>
-
-                    <img src="img/wrench.png" alt="workingMan">
-
-            </div>
-
-        </section>
-
-        <section class="highlights">
-            <div class="highlight-card service">
-                <div class="highlight-content">
-                    <h3>Servis vozila</h3>
-                    <p>Pogledajte naše usluge.</p>
-
-                    <div class="feature-box">
-                        <a href="pages/services.html" class="feature-btn">Više informacija</a>
-                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Maksimilijana+Benkovića+8+35400+Nova+Gradiška" target="_blank" class="btn">
+                        <i class="fa-solid fa-location-dot"></i>Lokacija
+                    </a>
                 </div>
             </div>
 
-            <div class="highlight-card roadside">
-                <div class="highlight-content">
-                    <h3>Izlazak na teren</h3>
-                    <p>Pomoć na cesti za manje intervencije i hitne situacije 24/7.</p>
-                </div>
-            </div>
+
+        </section>
+
+        <section class="services-preview">
+
+            <h2>Naše usluge</h2>
+            <p>Pregled najčešćih usluga u našem autoservisu.</p>
+
+            <div class="services-grid">
+
+                <div class="cards">
+                   <div class="cards-header">
+                       <div class="text">
+                           <h3>Servis vozila</h3>
+                           <p>Kompletno održavanje vozila.</p>
+                       </div>
+                       <img src="img/oil-drop.png" loading="lazy" alt="Zamjena ulja">
+                   </div>
+                   <ul>
+                       <li>Redovni servis</li>
+                       <li>Zamjena ulja i filtera</li>
+                       <li>Veliki servis (pumpa vode, remen/lanac)</li>
+                   </ul>
+               </div>
+
+               <div class="cards">
+                   <div class="cards-header">
+                       <div class="text">
+                           <h3>Kočnice</h3>
+                           <p>Provjera i popravak kočionog sustava.</p>
+                       </div>
+                       <img src="img/brakes.png" loading="lazy" alt="Servis kočnica">
+                   </div>
+                   <ul>
+                       <li>Zamjena pločica i diskova</li>
+                       <li>Izmjena kočione tekućine</li>
+                       <li>Dijagnostika ABS sustava</li>
+                   </ul>
+               </div>
+
+               <div class="cards">
+                   <div class="cards-header">
+                       <div class="text">
+                           <h3>Dijagnostika</h3>
+                           <p>Računalna dijagnostika i otkrivanje kvarova na vozilu.</p>
+                       </div>
+                       <img src="img/multimeter.png" loading="lazy" alt="Dijagnostika">
+                   </div>
+                   <ul>
+                       <li>OBD računalna dijagnostika</li>
+                       <li>Provjera grešaka motora</li>
+                       <li>Analiza rada senzora</li>
+                   </ul>
+               </div>
+
+               <div class="cards">
+                   <div class="cards-header">
+                       <div class="text">
+                           <h3>Trgovina autodijelova</h3>
+                           <p>Veliki izbor kvalitetnih dijelova i opreme za sva vozila.</p>
+                       </div>
+                       <img src="img/car-parts.png" loading="lazy" alt="Pomoć na cesti">
+                   </div>
+                       <ul>
+                           <li>zamjenski dijelovi</li>
+                           <li>gume</li>
+                           <li>filtri i ulja</li>
+                       </ul>
+                   </div>
+               </div>
+               
+               <a href="pages/services.html" class="btn">Pogledajte sve naše usluge</a>
+
         </section>
 
         <section class="tires">
 
-            <div    class="tires-image">
-                <img src="img/tires.png" alt="gume">
+            <div class="tires-image">
+                <img src="img/tires.png" loading="lazy" alt="gume">
             </div>
 
             <div class="tires-content">
@@ -128,13 +181,34 @@
 
 
         </section>
+        <section class="about">
+
+            <div class="about-content">
+                    <h2>O nama</h2>
+
+                    <div class="about-line"></div>
+
+                    <p>
+                        Poslujemo više od 20 godina te svojim klijentima 
+                        pružamo pouzdane i kvalitetne usluge održavanja vozila. 
+                        Naša djelatnost obuhvaća redovne servise, popravke i 
+                        dijagnostiku vozila, kao i prodaju novih autodijelova renomiranih proizvođača.
+                        Osim rada u radionici, nudimo i izlazak na teren za manje intervencije, 
+                        poput probušene gume ili problema s pokretanjem vozila.
+                    </p>
+
+                    <img src="img/wrench.png" loading="lazy" alt="workingMan">
+
+            </div>
+
+        </section>
 
         <section class="footer">
 
             <div class="footer-inner">
 
                 <div class="footer-brand">
-                    <img src="img/logo2.png" alt="logo">
+                    <img src="img/logo2.png" loading="lazy" alt="logo">
                 </div>
                 
 
@@ -180,12 +254,31 @@
                 </div>
             </div>
             
-             <div class="footer-bottom">
+            <div class="footer-bottom">
                 <p>© <span id="year"></span> Autodiskont. Sva prava pridržana.</p>
             </div>
 
         </section>
 
-        <script src="js/script.js"></script>
+            <script src="js/script.js"></script>
+
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "AutoRepair",
+                "name": "Auto Diskont",
+                "image": "https://your-site.netlify.app/img/car1.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Maksimilijana Benkovića 8",
+                    "addressLocality": "Nova Gradiška",
+                    "postalCode": "35400",
+                    "addressCountry": "HR"
+                },
+                "telephone": "+385997361535",
+                "openingHours": "Mo-Fr 08:00-17:00, Sa 08:00-13:00",
+                "url": "https://your-site.netlify.app"
+            }
+            </script>
     </body>
 </html>

@@ -13,9 +13,9 @@ body {
 .contact-container {
     max-width: 1100px;
     margin: 0 auto;
-
-    display: flex;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
 }
 
 .contact-info,
@@ -67,15 +67,24 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    font-family: inherit;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
 }
-
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #c92d3b;
+    box-shadow: 0 0 0 3px rgba(201,45,59,0.15);
+}
 .contact-form button {
     background: #94311B;
     color: #fff;
@@ -84,29 +93,47 @@ body {
     cursor: pointer;
 }
 
+.map-section {
+    line-height: 0;
+}
+
 .map-section iframe {
     width: 100%;
     height: 450px;
     display: block;
 }
 
+textarea    {
+    min-height: 70px;
+}
 
+@media (min-width: 1024px) {
+    .contact-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+    .contact-form {
+        grid-column: span 2; 
+        max-width: 600px;    
+        margin: 0 auto;     
+        width: 100%;
+    }
+}
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .contact-section    {
-        padding: 40px 8%;
+        padding: 50px 20px;
     }
 
     .contact-container {
-        flex-direction: column;
-        gap: 50px;
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .contact-section h2 {
         font-size: 24px;
     }
-    .contact-container {
-        flex-direction: column;
-    }
+
 }
