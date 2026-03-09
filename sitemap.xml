@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://autodiskont.hr/</loc>
+    <lastmod>2024-05-22</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://autodiskont.hr/pages/services.html</loc>
+    <lastmod>2024-05-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://autodiskont.hr/pages/contact-info.html</loc>
+    <lastmod>2024-05-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>
